@@ -4,6 +4,44 @@
 @import url(modules.less);
 
 
+html {
+    font-family: Cambria, Georgia, serif;
+    display: block;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+/** --------------------------------------------------------------
+ *  Byline
+ */
+
+.byline {
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #999;
+    display: block;
+}
+
+.byline-item {
+    padding: 1em;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.byline-picture {
+    padding: 5px;
+    width: 110px;
+    height: auto;
+    display: inline-block;
+}
+
+.byline-desc {
+    display: inline-block;
+    padding: 1em;
+    font-family: inherit;
+}
 
 /** --------------------------------------------------------------
  *  Logo images
@@ -20,6 +58,16 @@
     }
 }
 
+.about-github-img img {
+    width: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .site-logo-text {
         width: 40%;
@@ -31,5 +79,20 @@
 
     .profile {
         width: 10%;
+    }
+
+    .byline {
+        text-align: center;
+    }
+    
+    .byline-item {
+        padding: 1em;
+        display: block;
+    }
+
+    .byline-desc {
+        pre {
+            white-space: pre-wrap;
+        }
     }
 }
