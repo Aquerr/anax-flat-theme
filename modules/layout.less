@@ -2,8 +2,19 @@
  * Regions, basics to show off the regions.
  */
 
+ html {
+    font-family: @fontFamilyCambria;
+	display: block;
+	line-height: @lineHeight;
+}
+
+
  .route-grid .inner-wrap {
-	.showGrid();	 
+	.showGrid(1200px, "/img/grid/grid950x24x30x10-nomargin.png");	 
+ }
+
+ .route-typography .inner-wrap {
+	.showHGrid(1200px, "/img/grid/horisontal-grid-24.png");
  }
 
  .main{
@@ -24,7 +35,11 @@
 	max-width: 1200px;
 
 	html.vgrid & {
-		.showGrid();
+		.showGrid(1200px, "/img/grid/grid950x24x30x10-nomargin.png");
+	}
+
+	html.hgrid & {
+		.showHGrid(1200px, "/img/grid/horisontal-grid-24.png");
 	}
 }
 
